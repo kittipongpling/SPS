@@ -1,17 +1,33 @@
 <?php
-	class Admin extends CI_Controller{
-		public function view($page = 'home'){
-			if(!file_exists(APPPATH.'views/pages/'.$page.'.php')){
-				show_404();
-			}
+defined('BASEPATH') or exit('No direct script access allowed');
 
-			$data['title'] = ucfirst($page);
+class Admin extends CI_Controller
+{
 
-			$this->load->view('templates/header');
-		$this->load->view('templates/sidebar');
-		$this->load->view('templates/nevbar');
-		$this->load->view('pages/'.$page, $data);
-				$this->load->view('templates/footer');
-			
-		}
+
+	public function address()
+	{
+		$data['main_content'] = 'pages/admin/address';
+		$this->load->view('includes/template', $data);
 	}
+	public function ifm()
+	{
+		$data['main_content'] = 'pages/admin/ifm';
+		$this->load->view('includes/template', $data);
+	}
+	public function repair()
+	{
+		$data['main_content'] = 'pages/admin/repair';
+		$this->load->view('includes/template', $data);
+	}
+	public function user()
+	{
+		$data['main_content'] = 'pages/admin/user';
+		$this->load->view('includes/template', $data);
+	}
+	public function history()
+	{
+		$data['main_content'] = 'pages/admin/history';
+		$this->load->view('includes/template', $data);
+	}
+}

@@ -40,11 +40,11 @@
 			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
 				<div class="bg-white py-2 collapse-inner rounded">
 					<h6 class="collapse-header">Custom Components:</h6>
-					<a class="collapse-item" href="#">จัดการที่พักอาศัย</a>
-					<a class="collapse-item" href="#">จัดการข้อมูลผู็พักอาศัย</a>
-					<a class="collapse-item" href="#">จัดการแจ้งประชาสัมพันธ์</a>
-					<a class="collapse-item" href="#">ผลการแก้ไข</a>
-					<a class="collapse-item" href="#">แสดงสถิติการเข้าพัก</a>
+					<a class="collapse-item" href="<?php echo site_url(); ?>/admin/address">จัดการที่พักอาศัย</a>
+					<a class="collapse-item" href="<?php echo site_url(); ?>/admin/user">จัดการข้อมูลผู็พักอาศัย</a>
+					<a class="collapse-item" href="<?php echo site_url(); ?>/admin/ifm">จัดการแจ้งประชาสัมพันธ์</a>
+					<a class="collapse-item" href="<?php echo site_url(); ?>/admin/repair">ผลการแก้ไข</a>
+					<a class="collapse-item" href="<?php echo site_url(); ?>/admin/history">แสดงสถิติการเข้าพัก</a>
 				</div>
 			</div>
 		</li>
@@ -60,9 +60,9 @@
 				data-parent="#accordionSidebar">
 				<div class="bg-white py-2 collapse-inner rounded">
 					<h6 class="collapse-header">Custom Utilities:</h6>
-					<a class="collapse-item" href="#">บันทึกการรับเงิน</a>
-					<a class="collapse-item" href="#">บันทึกรายการจ่ายเงิน</a>
-					<a class="collapse-item" href="#">ตอบผลการแก้ไข</a>
+					<a class="collapse-item" href="<?php echo site_url(); ?>/director/save_bear">บันทึกการรับเงิน</a>
+					<a class="collapse-item" href="<?php echo site_url(); ?>/director/save_pay">บันทึกรายการจ่ายเงิน</a>
+					<a class="collapse-item" href="<?php echo site_url(); ?>/director/repair">ตอบผลการแก้ไข</a>
 				</div>
 			</div>
 		</li>
@@ -75,9 +75,9 @@
 			<div id="user" class="collapse" aria-labelledby="user" data-parent="#accordionSidebar">
 				<div class="bg-white py-2 collapse-inner rounded">
 					<h6 class="collapse-header">Custom Utilities:</h6>
-					<a class="collapse-item" href="#">บันทึกหน่วยการใช้น้ำ</a>
-					<a class="collapse-item" href="#">สรุปค่าใช้จ่าย</a>
-					<a class="collapse-item" href="#">แจ้งปัญหาห้องพัก</a>
+					<a class="collapse-item" href="<?php echo site_url(); ?>/user/save_water">บันทึกหน่วยการใช้น้ำ</a>
+					<a class="collapse-item" href="<?php echo site_url(); ?>/user/summary">สรุปค่าใช้จ่าย</a>
+					<a class="collapse-item" href="<?php echo site_url(); ?>/user/problem">แจ้งปัญหาห้องพัก</a>
 				</div>
 			</div>
 		</li>

@@ -5,7 +5,7 @@
 	<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 		<!-- Sidebar - Brand -->
-		<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+		<a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url(); ?>">
 			<div class="sidebar-brand-icon rotate-n-15">
 				<i class="fas fa-laugh-wink"></i>
 			</div>
@@ -17,7 +17,7 @@
 
 		<!-- Nav Item - Dashboard -->
 		<li class="nav-item active">
-			<a class="nav-link" href="index.html">
+			<a class="nav-link" href="<?php echo base_url(); ?>">
 				<i class="fas fa-fw fa-tachometer-alt"></i>
 				<span>หน้าแรก</span></a>
 		</li>
@@ -40,11 +40,11 @@
 			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
 				<div class="bg-white py-2 collapse-inner rounded">
 					<h6 class="collapse-header">Custom Components:</h6>
-					<a class="collapse-item" href="<?php echo site_url(); ?>/admin/address">จัดการที่พักอาศัย</a>
-					<a class="collapse-item" href="<?php echo site_url(); ?>/admin/user">จัดการข้อมูลผู็พักอาศัย</a>
-					<a class="collapse-item" href="<?php echo site_url(); ?>/admin/ifm">จัดการแจ้งประชาสัมพันธ์</a>
-					<a class="collapse-item" href="<?php echo site_url(); ?>/admin/repair">ผลการแก้ไข</a>
-					<a class="collapse-item" href="<?php echo site_url(); ?>/admin/history">แสดงสถิติการเข้าพัก</a>
+					<a class="collapse-item" href="<?php echo base_url(); ?>/admin/address">จัดการที่พักอาศัย</a>
+					<a class="collapse-item" href="<?php echo base_url(); ?>/admin/user">จัดการข้อมูลผู้พักอาศัย</a>
+					<a class="collapse-item" href="<?php echo base_url(); ?>/admin/ifm">จัดการแจ้งประชาสัมพันธ์</a>
+					<a class="collapse-item" href="<?php echo base_url(); ?>/admin/repair">ผลการแก้ไข</a>
+					<a class="collapse-item" href="<?php echo base_url(); ?>/admin/history">แสดงสถิติการเข้าพัก</a>
 				</div>
 			</div>
 		</li>

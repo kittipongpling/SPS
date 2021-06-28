@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $this->load->helper('url');
-
+$this->load->helper('array');
 ?>
 <html lang="en">
 

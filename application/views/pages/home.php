@@ -1,3 +1,4 @@
+
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
@@ -9,7 +10,6 @@
 
 	<!-- Content Row -->
 	<div class="row">
-
 		<!-- Earnings (Monthly) Card Example -->
 		<div class="col-xl-3 col-md-6 mb-4">
 			<div class="card border-left-primary shadow h-100 py-2">
@@ -18,7 +18,9 @@
 						<div class="col mr-2">
 							<div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
 								จำนวนสมาชิกทั้งหมด</div>
-							<div class="h5 mb-0 font-weight-bold text-gray-800">50 คน</div>
+							<div class="h5 mb-0 font-weight-bold text-gray-800"><?php foreach($user_count as $row){
+								echo $row->COUNT;
+							} ?> คน</div>
 						</div>
 						<div class="col-auto">
 							<i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -120,33 +122,28 @@
 
 									</tr>
 								</thead>
-								<tfoot>
+								<!-- <tfoot>
 									<tr>
 										<th>หัวเรื่อง</th>
 										<th>รายละเอียด</th>
 										<th>รูปภาพ</th>
 
 									</tr>
-								</tfoot>
+								</tfoot> -->
 								<tbody>
+								<?php
+foreach ($table as $row)
+{ ?>
 									<tr>
-										<td>กรมอุตุ</td>
-										<td>วันนี้อาจมีเมฆเป็นบางส่วน</td>
-										<td>Photo</td>
+										<td><?php echo $row->ifm_name; ?></td>
+										<td><?php echo $row->ifm_detail; ?></td>
+										<td>รูปภาพ</td>
 
 									</tr>
-									<tr>
-										<td>น้ำไม่ไหล</td>
-										<td>การประปาแจ้งมาว่าทำการตัดน้ำชั่วคราว</td>
-										<td>Photo</td>
-
-									</tr>
-									<tr>
-										<td>ไฟฟ้าดับ</td>
-										<td>วันนี้ 11โมง ไฟดับนะ</td>
-										<td>Photo</td>
-
-									</tr>
+									
+									<?php
+}
+?>
 
 								</tbody>
 							</table>

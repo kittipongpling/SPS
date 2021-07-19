@@ -25,9 +25,9 @@ public function get_list_user()
 		$this->c = count($this->rs);
 		$this->r = $this->q->row();
         // var_dump($this->rs);
-        // echo "<pre>";
-        // print_r($this->rs);
-        // echo "</pre>";
+        echo "<pre>";
+        print_r($this->rs);
+        echo "</pre>";
 		return $this->rs;
 }
 

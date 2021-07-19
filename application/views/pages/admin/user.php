@@ -41,16 +41,14 @@
 								foreach ($table as $object) {
     ?>
                                 <tr>
-                                    <th scope="row"><?php echo $object->user_firstname; echo $object->user_lastname; ?>
+                                    <th scope="row"><?php echo $object->fname;echo " "; echo $object->lname; ?>
                                     </th>
 
-                                    <td><?php echo $object->user_code; ?></td>
-                                    <td><?php echo $object->user_parent; ?></td>
-                                    <td><?php echo $object->user_phone; ?></td>
-                                    <td><?php echo $object->user_address;
-								echo $object->user_amphur;
-								echo $object->user_province;
-								echo $object->user_zipcode;
+                                    <td><?php echo $object->tel; ?></td>
+                                    <td><?php echo $object->fname1; ?></td>
+                                    <td><?php echo $object->lname1; ?></td>
+                                    <td><?php echo $object->tel1;
+						
 								?></td>
                                     <td align="left">
 

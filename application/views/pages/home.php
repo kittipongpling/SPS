@@ -18,9 +18,7 @@
 						<div class="col mr-2">
 							<div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
 								จำนวนสมาชิกทั้งหมด</div>
-							<div class="h5 mb-0 font-weight-bold text-gray-800"><?php foreach($user_count as $row){
-								echo $row->COUNT;
-							} ?> คน</div>
+							<div class="h5 mb-0 font-weight-bold text-gray-800"> 50 คน</div>
 						</div>
 						<div class="col-auto">
 							<i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -131,19 +129,13 @@
 									</tr>
 								</tfoot> -->
 								<tbody>
-								<?php
-foreach ($table as $row)
-{ ?>
-									<tr>
-										<td><?php echo $row->ifm_name; ?></td>
-										<td><?php echo $row->ifm_detail; ?></td>
+										<td>วันนี้ฝนตก</td>
+										<td>วันนี้กรมอุตุนิยม วิทยา</td>
+										<td>รูป</td>
 										<td>รูปภาพ</td>
 
 									</tr>
-									
-									<?php
-}
-?>
+				
 
 								</tbody>
 							</table>

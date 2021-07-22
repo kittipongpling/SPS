@@ -7,14 +7,14 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->model('Home_model');
 
-		$this->load->database();
+		// $this->load->database();
 
 		
 		// $data['main_content'] = 'pages/admin/user';
-		$data['table'] = $this->Home_model->get_list_ifm();
-		$data['user_count'] = $this->Home_model->get_count_user();
+		// $data['table'] = $this->Home_model->get_list_ifm();
+		// $data['user_count'] = $this->Home_model->get_count_user();
 
-		$data['main_content'] = 'pages/home';
+		 $data['main_content'] = 'pages/home';
         $this->load->view('includes/template', $data);
 
 	}
